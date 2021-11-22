@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:kellid/presentation/core/consts/routes.dart';
+import 'package:kellid/presentation/estate_registration/location/post_location_page.dart';
 import './presentation/core/router.dart' as router;
 import 'package:kellid/presentation/core/consts/colors.dart';
-import 'package:kellid/presentation/post_registration/location/post_location_page.dart';
 
 import 'core/init_dio.dart';
 import 'core/service_locator.dart';
@@ -47,7 +46,6 @@ class MyApp extends StatelessWidget {
       ),
       onGenerateRoute: router.generateRoute,
       home: const PostLocationPage(),
-      initialRoute: Routes.postLocationPage,
     );
   }
 }
